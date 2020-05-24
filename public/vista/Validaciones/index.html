@@ -15,64 +15,73 @@
 <body>
     <header>
         <div class="prin">
-        <a  href="index.html"><img src="Imagenes/pricipal.jpg" alt="Pcont"  /></a>
+        <a  href="index.html"><img src="../Imagenes/pricipal.jpg" alt="Pcont"  /></a>
         <input  type="text" size="75"/> 
-        <img id="log" src="Imagenes/login.png" alt=""/>
-        <img id="men" src="Imagenes/mensaje.png" alt=""/>
-        <a  href="../vista/Validaciones/index.html"><img id="acer" src="Imagenes/anadir.png" alt=""/></a>
+        <img id="log" src="../Imagenes/login.png" alt=""/>
+        <img id="men" src="../Imagenes/mensaje.png" alt=""/>
+        <a  href="index.html"><img id="acer" src="../Imagenes/anadir.png" alt=""/></a>
         </div>    
         
         <nav class="menu">
                 <ul>
-                    <li><a  href="index.html">Inicio</a></li>
-                    <li><a href="Docs/AsesoriaContable/acontable.html"> Asesoria Contable</a></li>
-                    <li><a href="Docs/AsesoriaLaboral/alaboral.html">Asesoria Laboral</a></li>
-                    <li><a href="Docs/AsesoriaTributaria/atributaria.html">Asesoria Tributaria</a></li>
-                    <li><a href="Docs/Clientes/clientes.html">Clientes</a></li>
-                    <li><a href="Docs/Empresa/empresa.html">Empresa</a></li>
-                    <li><a href="Docs/Contactenos/contactenos.html">Contactenos</a></li>
-                    <li><a id="ultimo" href="Docs/Ubicacion/ubicacion.html">Ubicacion</a></li>
+                    <li><a  href="../index.html">Inicio</a></li>
+                    <li><a href="../Docs/AsesoriaContable/acontable.html"> Asesoria Contable</a></li>
+                    <li><a href="../Docs/AsesoriaLaboral/alaboral.html">Asesoria Laboral</a></li>
+                    <li><a href="../Docs/AsesoriaTributaria/atributaria.html">Asesoria Tributaria</a></li>
+                    <li><a href="../Docs/Clientes/clientes.html">Clientes</a></li>
+                    <li><a href="../Docs/Empresa/empresa.html">Empresa</a></li>
+                    <li><a href="../Docs/Contactenos/contactenos.html">Contactenos</a></li>
+                    <li><a id="ultimo" href="../Docs/Ubicacion/ubicacion.html">Ubicacion</a></li>
                 </ul>
         </nav>
     </header>
     <form id="formulario01" method="POST" action="PHP/doc.php" >
 
         <label for="cedula">Cedula (*)</label>
+        <br>
         <input type="text" id="cedula" name="cedula" value="" onkeyup="return validarCedula(this)"  placeholder="Ingrese el número de cedula ..."/>
         <span id="mensajeCedula" class="error"></span>
         
         <br>
 
         <label for="nombres">Nombres (*)</label>
+        <br>
         <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres ..." onkeyup="return validarNombres(this)"/>
         <span id="mensajeNombres" class="error"></span>
         <br>
 
         <label for="apellidos">Apelidos (*)</label>
+        <br>
         <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ... " onkeyup="return validarApellidos(this)"/>
         <span id="mensajeApellidos" class="error"></span>
         <br>
 
         <label for="direccion">Dirección (*)</label>
+        <br>
         <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." />
         <span id="mensajeDireccion" class="error"></span>
         <br>
+        
         <label for="telefono">Teléfono (*)</label>
+        <br>
         <input type="text" id="telefono" onkeyup="return validarTelefono(this)"  name="telefono" value="" placeholder="Ingrese su número telefónico..." />
         <span id="mensajeTelefono" class="error"></span>
         <br>
 
         <label for="fecha">Fecha Nacimiento (*)</label>
+        <br>
         <input type="text" id="fechaNacimiento" onkeyup="return validarFecha(this)" name="fechaNacimiento" value="" placeholder="Ingrese sufecha de nacimiento ..." />
         <span id="mensajeFecha" class="error"></span>
         <br>
 
         <label for="correo">Correo electrónico (*)</label>
+        <br>
         <input type="email" id="correo" name="correo"  onkeyup="return validarCorreo(this)" value="" placeholder="Ingrese su correo electrónico ..." />
         <span id="mensajeCorreo" class="error"></span>
         <br>
         
         <label for="correo">Contraseña (*)</label>
+        <br>
         <input type="password" id="contrasena" name="contrasena" value="" onkeyup="return validarContraseña(this)" placeholder="Ingrese su contraseña ..." />
         <span id="mensajeContrasena" class="error"></span>
         <br>
