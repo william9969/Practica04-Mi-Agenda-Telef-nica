@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="validaciones.js"></script>
+    <link href="validaciones.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+    .error {
+        color: red;
+        font-size: 8px;
+    }
+    </style>
+</head>
+<body>
+    <form id="formulario01" method="POST" action="PHP/doc.php" >
+
+        <label for="cedula">Cedula (*)</label>
+        <input type="text" id="cedula" name="cedula" value="" onkeyup="return validarCedula(this)"  placeholder="Ingrese el número de cedula ..."/>
+        <span id="mensajeCedula" class="error"></span>
+        
+        <br>
+
+        <label for="nombres">Nombres (*)</label>
+        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres ..." onkeyup="return validarNombres(this)"/>
+        <span id="mensajeNombres" class="error"></span>
+        <br>
+
+        <label for="apellidos">Apelidos (*)</label>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ... " onkeyup="return validarApellidos(this)"/>
+        <span id="mensajeApellidos" class="error"></span>
+        <br>
+
+        <label for="direccion">Dirección (*)</label>
+        <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." />
+        <span id="mensajeDireccion" class="error"></span>
+        <br>
+        <label for="telefono">Teléfono (*)</label>
+        <input type="text" id="telefono" onkeyup="return validarTelefono(this)"  name="telefono" value="" placeholder="Ingrese su número telefónico..." />
+        <span id="mensajeTelefono" class="error"></span>
+        <br>
+
+        <label for="fecha">Fecha Nacimiento (*)</label>
+        <input type="text" id="fechaNacimiento" onkeyup="return validarFecha(this)" name="fechaNacimiento" value="" placeholder="Ingrese sufecha de nacimiento ..." />
+        <span id="mensajeFecha" class="error"></span>
+        <br>
+
+        <label for="correo">Correo electrónico (*)</label>
+        <input type="email" id="correo" name="correo"  onkeyup="return validarCorreo(this)" value="" placeholder="Ingrese su correo electrónico ..." />
+        <span id="mensajeCorreo" class="error"></span>
+        <br>
+        
+        <label for="correo">Contraseña (*)</label>
+        <input type="password" id="contrasena" name="contrasena" value="" onkeyup="return validarContraseña(this)" placeholder="Ingrese su contraseña ..." />
+        <span id="mensajeContrasena" class="error"></span>
+        <br>
+        <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
+        <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
+        <!--<input type="submit" id="crear" name="crear" value="Aceptar" />
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />-->
+    </form>
+</body>
+</html>

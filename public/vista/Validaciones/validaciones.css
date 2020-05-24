@@ -1,0 +1,36 @@
+#formulario01{
+    position: absolute;
+    background-color: black;
+    top: 2%;
+    left: 30%;
+    border: black solid;
+    padding: 30px 50px 30px 30px;
+}
+#formulario01 label{
+    color: white;
+
+    float: left;
+    margin: 5px;
+    
+    width: 100%;
+}
+#formulario01 input{
+    width: 100%;
+    float: left;
+    margin-left: 30px;
+    
+}
+button{
+    margin-top: 30px;
+    float: left;
+    width: 50px!;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+}
+#crear {
+    margin-left: 100px;
+}
+b
