@@ -1,0 +1,293 @@
+body{float: left;
+    background-color: #080429;}
+    @font-face {
+        font-family: 'Raleway';
+        src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+       
+    }
+    header .prin {
+        background-color:#080429;
+        width: 100%;
+        height: 110px;
+        padding: 0px;
+        border:white solid;
+        border-radius:20px ;
+    }
+    .prin a img{
+         float: left;
+         margin-top: 25px;
+        height: 70px;
+        width: 21%;    
+    }
+    
+    .prin input{
+        background-color: white;
+        border: grey solid;
+        margin-top: 35px;
+        margin-left: 90px;
+        float: left;
+        cursor: pointer;
+        color: blue;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        border-radius: 20px;
+    }
+    
+     #log{
+        border: white solid;
+        border-radius: 100%;
+        float: left;
+        margin-top: 30px;
+        margin-left: 130px;
+        width: 50px;
+        height: 45px;
+    }
+     #men{
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 50px;
+        height: 45px;
+        border: white solid;
+        border-radius: 100%;
+    }
+     #acer{
+        float: left;
+        width: 85px;
+        height: 85px;
+        margin-top: 13px;
+        border-radius: 100%;
+    }
+    
+    
+    .menu ul {
+        float: left;
+        width: 99.6%;
+        margin: 0%;
+        margin-top: 15px;
+        padding: 0%;
+        border: 2px solid;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color:white;
+    }
+    
+    .menu ul li {
+        float: left;
+        list-style: none;
+        padding: 13px;
+        margin: 0%;
+        padding-left: 36.93px;
+        padding-right: 33px;
+        border-left: 1px solid;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color:#080429 ;
+    }
+    
+    .menu ul li:hover{
+        background-color: gray;
+        text-decoration: wheat;
+        cursor: pointer;
+    }
+    .menu ul li #ultimo{
+       padding-right: 17px;
+    }
+    
+
+    .principal{
+        float: left;
+        width: 80%;
+        margin-top: 80px;
+        
+    }
+    #dE{
+        background-color: white;
+        width: 55%;
+        text-align: center;
+        padding: 10px;
+        margin-left: 23%;
+        border-radius: 30px;
+    }
+    .dir{
+        border-left: white solid;
+        margin-left: 250px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .dir h3{
+        padding-left: 50px;
+        color: white;
+    }
+    
+    .gm{
+        padding-left: 250px;
+    }
+    .gm h2{
+        background-color: white;
+        width: 70%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .gm iframe{
+        margin-left: 30px;
+        align-content: center;
+        width: 500px;
+        height: 200px;
+        border: white solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+
+    .contacto{
+        float: left;
+        
+        width: 20%;
+        color: white;
+        margin-top: 50px;
+    }
+    #nC{
+        margin-left: 30px;
+        font-size: 30px;
+    
+    }
+    section .login  {
+        float: left;
+        padding-left: 10px;
+        margin-left: 25px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        border: white solid;
+    }
+    section .login  form{
+        padding-top:5px;
+
+    }
+    section .login form textarea{
+        width: 95%;
+        height: 70px;
+    }
+
+    section .login form button{
+        margin: 10px;
+        margin-left: 55px;
+        padding: 5px;
+        border: white solid;
+        border-radius: 3px;
+    }
+
+    section .usuario{
+        margin-top: 30px;
+        margin-left: 25px;
+        float: left;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        border: white solid;
+    }
+    section .usuario  form{
+        padding-top:5px;
+    }
+
+    section .usuario form button{
+        margin: 10px;
+        margin-left: 55px;
+        padding: 5px;
+        border: white solid;
+        border-radius: 3px;
+    }
+
+
+    footer{
+        float: left;
+        margin-top: 30px;
+        border: wheat solid;
+        background-color: #080429;
+        padding-bottom: 20px;
+    }
+    footer .fone{
+        float: left;
+        background-color: #080429;
+        margin-top: 30px;
+        padding-top: 20px;
+        margin-left: 50px;
+        width: 370px;
+        height:240px;
+        color: white;
+    }
+    
+    footer .ftwo{
+        float: left;
+        background-color: #080429;
+        margin-top: 30px;
+        padding-top: 30px;
+        height:240px;
+        width: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    footer .ftres{
+        float: left;
+        background-color: #080429;
+        margin-top: 30px;
+        padding-top: 30px;
+        height:240px;
+        width: 300px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+    #ins{
+        width: 50px;
+        height: 60px;
+        margin-left: 40px;
+        
+    }
+    #fbk{ 
+        border: white solid;
+        width: 35px;
+        height: 35px;
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+    #logof{
+        border: white solid;
+        margin-top: 10px;
+        width: 275px;
+        height: 70px;
+        
+    }  
+    
+    footer div .fone a,p{
+        padding-left: 10px;
+        font-size: 13px;
+        
+    }
+    legend {
+       align-items: center;
+    }
+    footer div fieldset {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+    }
+    hr, .color {
+        height: 1px;
+       border: 0;
+       background-color: white;
+    }
+    footer div fieldset h4{
+        margin-top: 25px;
+        font-size: 12px;
+        padding-left: 30px;
+        color: white;
+    }
