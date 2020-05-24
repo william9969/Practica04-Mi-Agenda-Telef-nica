@@ -1,36 +1,154 @@
-#formulario01{
-    position: absolute;
-    background-color: black;
-    top: 2%;
-    left: 30%;
-    border: black solid;
-    padding: 30px 50px 30px 30px;
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+   
 }
-#formulario01 label{
-    color: white;
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body {
+    background-color: #080429;
+}
 
-    float: left;
-    margin: 5px;
-    
+.prin {
+    background-color:#080429;
     width: 100%;
+    height: 110px;
+    border-radius: 18px;
+    border:white solid;
+    border-radius:20px ;
 }
-#formulario01 input{
-    width: 100%;
+
+.prin a img{
     float: left;
-    margin-left: 30px;
-    
+    margin-top: 25px;
+   height: 70px;
+   width: 21%;    
 }
-button{
-    margin-top: 30px;
+
+.prin input{
+   background-color: white;
+   border: grey solid;
+   margin-top: 35px;
+   margin-left: 90px;
+   float: left;
+   cursor: pointer;
+   font-size: 16px;
+   color: blue;
+   padding: 10px;
+   width: 40%;
+   border-radius: 20px;
+}
+
+#log{
+   border: white solid;
+   border-radius: 100%;
+   float: left;
+   margin-top: 30px;
+   margin-left: 130px;
+   width: 50px;
+   height: 45px;
+}
+#men{
+   float: left;
+   margin-top: 30px;
+   margin-left: 20px;
+   width: 50px;
+   height: 45px;
+   border: white solid;
+   border-radius: 100%;
+}
+#acer{
+   float: left;
+   width: 85px;
+   height: 85px;
+   margin-top: 13px;
+   border-radius: 100%;
+}
+
+.menu ul {
     float: left;
-    width: 50px!;
-    margin-left: 30px;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding: 10px;
+    width: 99.6%;
+    margin: 0%;
+    margin-top: 15px;
+    padding: 0%;
+    border: 2px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:white;
 }
-#crear {
-    margin-left: 100px;
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    padding: 13px;
+    margin: 0%;
+    padding-left: 36.93px;
+    padding-right: 33px;
+    border-left: 1px solid;
 }
-b
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#080429 ;
+}
+
+.menu ul li:hover{
+    background-color: gray;
+    text-decoration: wheat;
+    cursor: pointer;
+}
+#formulario01 {
+    width: 80%;
+    top:110px;
+    left: 100px;
+    position: relative;
+    background-color: #2b3a4d;
+    border-radius: 30px;
+    text-align: left;
+    padding: 30px;
+    border: 3px solid white;
+}
+
+#formulario01 label  {
+    color :white;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+#formulario01 input {
+    color : #7e8da0;
+    background-color:#2b3a4d;
+    /*border:none;*/
+    width: 400px;
+    /*padding: 5px;*/
+    margin: 10px;
+    margin-left: 90px;
+    height: 30px;
+    font-size: 13px;
+}
+
+#formulario01 #crear{
+    background-color: #59cebe;
+    color:white;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+}
+
+#formulario01 #cancelar{
+    background-color: #59cebe;
+    color:white;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+}
+
+
+.error {
+    color: #c47953;
+    font-size: 10px;
+}

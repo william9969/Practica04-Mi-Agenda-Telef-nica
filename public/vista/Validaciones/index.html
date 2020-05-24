@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="validaciones.js"></script>
+    
     <link href="validaciones.css" type="text/css" rel="stylesheet"/>
     <style type="text/css">
     .error {
@@ -12,6 +13,28 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="prin">
+        <a  href="index.html"><img src="Imagenes/pricipal.jpg" alt="Pcont"  /></a>
+        <input  type="text" size="75"/> 
+        <img id="log" src="Imagenes/login.png" alt=""/>
+        <img id="men" src="Imagenes/mensaje.png" alt=""/>
+        <a  href="../vista/Validaciones/index.html"><img id="acer" src="Imagenes/anadir.png" alt=""/></a>
+        </div>    
+        
+        <nav class="menu">
+                <ul>
+                    <li><a  href="index.html">Inicio</a></li>
+                    <li><a href="Docs/AsesoriaContable/acontable.html"> Asesoria Contable</a></li>
+                    <li><a href="Docs/AsesoriaLaboral/alaboral.html">Asesoria Laboral</a></li>
+                    <li><a href="Docs/AsesoriaTributaria/atributaria.html">Asesoria Tributaria</a></li>
+                    <li><a href="Docs/Clientes/clientes.html">Clientes</a></li>
+                    <li><a href="Docs/Empresa/empresa.html">Empresa</a></li>
+                    <li><a href="Docs/Contactenos/contactenos.html">Contactenos</a></li>
+                    <li><a id="ultimo" href="Docs/Ubicacion/ubicacion.html">Ubicacion</a></li>
+                </ul>
+        </nav>
+    </header>
     <form id="formulario01" method="POST" action="PHP/doc.php" >
 
         <label for="cedula">Cedula (*)</label>
