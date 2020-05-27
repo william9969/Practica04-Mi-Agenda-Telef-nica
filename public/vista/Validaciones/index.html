@@ -35,7 +35,7 @@
                 </ul>
         </nav>
     </header>
-    <form id="formulario01" method="POST" action="../controladores/crear_usuario.php">
+    <form id="formulario01" method="POST" action="../../controladores/crear_usuario.php">
 
         <label for="cedula">Cedula (*)</label>
         <br>
@@ -62,6 +62,12 @@
         <span id="mensajeDireccion" class="error"></span>
         <br>
         
+        <label for="telefono">Tipo Telefono (*)</label>
+        <br>
+        <input type="text" id="tip_telefono" onkeyup=""  name="tip_telefono" value="" placeholder="Ingrese el tipo de telefono..." />
+        <span id="mensajeTipTelefono" class="error"></span>
+        <br>
+
         <label for="telefono">Teléfono (*)</label>
         <br>
         <input type="text" id="telefono" onkeyup="return validarTelefono(this)"  name="telefono" value="" placeholder="Ingrese su número telefónico..." />
@@ -79,7 +85,7 @@
         <input type="email" id="correo" name="correo"  onkeyup="return validarCorreo(this)" value="" placeholder="Ingrese su correo electrónico ..." />
         <span id="mensajeCorreo" class="error"></span>
         <br>
-        
+
         <label for="correo">Contraseña (*)</label>
         <br>
         <input type="password" id="contrasena" name="contrasena" value="" onkeyup="return validarContraseña(this)" placeholder="Ingrese su contraseña ..." />
