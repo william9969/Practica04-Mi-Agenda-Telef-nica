@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="validaciones.js"></script>
+    <script type="text/javascript" src="../../JavaScript/validaciones.js"></script>
     
-    <link href="validaciones.css" type="text/css" rel="stylesheet"/>
+    <link href="../../CSS/CSSVALIDACIONES/validaciones.css" type="text/css" rel="stylesheet"/>
     <style type="text/css">
     .error {
         color: red;
@@ -15,27 +15,26 @@
 <body>
     <header>
         <div class="prin">
-        <a  href="index.html"><img src="../Imagenes/pricipal.jpg" alt="Pcont"  /></a>
-        <input  type="text" size="75"/> 
-        <img id="log" src="../Imagenes/login.png" alt=""/>
-        <img id="men" src="../Imagenes/mensaje.png" alt=""/>
-        <a  href="index.html"><img id="acer" src="../Imagenes/anadir.png" alt=""/></a>
+            <a  href="../../index.html"><img src="../../Imagenes/pricipal.jpg" alt="Pcont"  /></a>
+            <input  type="text" size="75"/> 
+            <a href="../Login/login.html"><img id="log" src="../../Imagenes/login.png" alt=""/></a>
+            <img id="men" src="../../Imagenes/mensaje.png" alt=""/>
+            <a  href="validacion.html"><img id="acer" src="../../Imagenes/anadir.png" alt=""/></a>
         </div>    
-        
         <nav class="menu">
                 <ul>
-                    <li><a  href="../index.html">Inicio</a></li>
-                    <li><a href="../Docs/AsesoriaContable/acontable.html"> Asesoria Contable</a></li>
-                    <li><a href="../Docs/AsesoriaLaboral/alaboral.html">Asesoria Laboral</a></li>
-                    <li><a href="../Docs/AsesoriaTributaria/atributaria.html">Asesoria Tributaria</a></li>
-                    <li><a href="../Docs/Clientes/clientes.html">Clientes</a></li>
-                    <li><a href="../Docs/Empresa/empresa.html">Empresa</a></li>
-                    <li><a href="../Docs/Contactenos/contactenos.html">Contactenos</a></li>
-                    <li><a id="ultimo" href="../Docs/Ubicacion/ubicacion.html">Ubicacion</a></li>
+                    <li><a  href="../../index.html">Inicio</a></li>
+                    <li><a href="../AsesoriaContable/acontable.html"> Asesoria Contable</a></li>
+                    <li><a href="../AsesoriaLaboral/alaboral.html">Asesoria Laboral</a></li>
+                    <li><a href="../AsesoriaTributaria/atributaria.html">Asesoria Tributaria</a></li>
+                    <li><a href="../Clientes/clientes.html">Clientes</a></li>
+                    <li><a href="../Empresa/empresa.html">Empresa</a></li>
+                    <li><a href="../Contactenos/contactenos.html">Contactenos</a></li>
+                    <li><a id="ultimo" href="../Ubicacion/ubicacion.html">Ubicacion</a></li>
                 </ul>
         </nav>
     </header>
-    <form id="formulario01" method="POST" action="../../controladores/crear_usuario.php">
+    <form id="formulario01" method="POST" action="../../../controladores/crear_usuario.php">
 
         <label for="cedula">Cedula (*)</label>
         <br>
