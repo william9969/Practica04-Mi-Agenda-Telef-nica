@@ -18,8 +18,10 @@
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
     $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion', '$telefono',
-    '$correo', MD5('$contrasena'), '$fechaNacimiento', 'N', null, null)";
-    if ($conn->query($sql) === TRUE) {
+    '$correo', MD5('$contrasena'), '$fechaNacimiento')";
+    $sqlT = "INSERT INTO telefono VALUES (0, '$tip_telefono', '$telefono',0)";
+
+    if ($conn->query($sql) && $conn->query($sqlT) === TRUE) {
         echo "<p>Se ha creado los datos personales correctamemte!!!</p>";
     } else {
         if($conn->errno == 1062){
@@ -31,7 +33,7 @@
     
      //cerrar la base de datos
      $conn->close();
-     echo "<a href='../vista/crear_usuario.html'>Regresar</a>";
+     echo "<a href='../../vista/Docs/Validaciones/validacion.html'>Regresar</a>";
     
      ?>
 </body>
