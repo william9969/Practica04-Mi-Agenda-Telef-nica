@@ -8,9 +8,10 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
     $_SESSION['isLogged'] = TRUE;
-    header("Location: ../../admin/vista/usuario/index.php");
+
+    header("Location: ../../admin/vista/user/indexUser.php");
     } else {
-    header("Location: ../vista/login.html");
+    header("Location: ../vista/Login/login.html");
     }
     $conn->close();
 ?>
