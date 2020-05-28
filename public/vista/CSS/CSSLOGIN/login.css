@@ -39,12 +39,14 @@ header{
     width: 18%;
     border-radius: 30px;
     padding: 50px;
+    padding-bottom: 20px;
+
     float: left;
     background-color:#080429;
     border: 3px white solid;
 }
 #formulario01 h1{
-    margin-top: 5   px;
+    margin-top: 10px;
     margin-left: 65px;
     color: teal;
     opacity: 0.8;
@@ -70,8 +72,29 @@ header{
     border: white 2px solid;
     color: white;
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px;
+}
+
+#formulario01 a{
+    float: left;;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #080429;
+    border: 2px solid white;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    padding-top: 10px;
 }
 #formulario01 button:hover{
     opacity: 1.0;
+}
+#formulario01 a:hover{
+    opacity: 0.6;
+    width: 90%;
 }
