@@ -6,16 +6,28 @@
  <link href="../../CSS/CSSLOGIN/login.css"  type="text/css" rel="stylesheet"/>
 </head>
 <body>
- <form id="formulario01" method="POST" action="../controladores/login.php">
-    <label for="correo">Correo electrónico </label>
-    <input type="text" id="correo" name="correo" value="" placeholder="Ingrese el correo ..."/>
-    <br>
-    <label for="nombres">Constraseña (*)</label>
-    <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su
-    contraseña ..."/>
-    <br>
-    <input type="submit" id="login" name="login" value="Iniciar Sesión" />
+   <header>
+      <hr>
+      <h1>Bienvenido</h1>
+      <hr>
+   </header>
+   <section >
+      
+      <img id="imgl" src="../../Imagenes/login2.png"/>
+   </section>
 
- </form>
+   <form id="formulario01" method="POST" action="../controladores/login.php">
+      <h1>PCONT</h1>
+      <label for="correo">Correo electrónico: </label>
+      <br>
+      <input type="text" id="correo" name="correo" value="" placeholder="    Ingrese el correo ..."/>
+      <br>
+      <label for="nombres">Constraseña: </label>
+      <br>
+      <input type="password" id="contrasena" name="contrasena" value="" placeholder="   Ingrese su contraseña ..."/>
+      <br>
+      <button type="submit" id="login" name="login" value="Iniciar Sesión">  Iniciar Sesion</button> 
+      <br>
+   </form>
 </body>
 </html>

@@ -12,6 +12,5 @@
     } else {
     header("Location: ../vista/login.html");
     }
-
     $conn->close();
 ?>

@@ -1,9 +1,12 @@
-body{float: left;
+    body{float: left;
     background-color: #080429;}
     @font-face {
         font-family: 'Raleway';
         src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
        
+    }
+    * {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
     }
     header .prin {
         background-color:#080429;
