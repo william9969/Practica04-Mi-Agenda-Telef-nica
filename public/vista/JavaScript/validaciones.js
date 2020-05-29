@@ -269,13 +269,13 @@ function validarFecha(fecha){
     if(fecha.value.length <11){
             if((miAscii >= 48 && miAscii <= 57) || miAscii ==47){
                 arrayFecha = fecha.value.split("/");
-                var dia=arrayFecha[0];
+                var anio = arrayFecha[0];
+                console.log(anio);
                 var mes = arrayFecha[1];
-                var anio = arrayFecha[2];
-                if((dia>0 && dia<32) && (mes>0 && mes<13) && (anio>1900 && anio<2020))
+                var dia = arrayFecha[2];                
+                if((anio>1900 && anio<2020)  && (mes>0 && mes<13) && (dia>0 && dia<32) )
                 {
                     banderaFec=true;
-                    console.log("Contaseña")
                     document.getElementById('mensajeFecha').innerHTML = '<br>Fecha valida';
                     document.getElementById('mensajeFecha').style.color='white';
                     fecha.style.border = '2px chartreuse solid';

@@ -16,6 +16,7 @@
         <th>Correo</th>
     </tr>
  <?php
+ 
  include '../../../config/conexionBD.php';
  $sql = "SELECT * FROM usuario";
  $result = $conn->query($sql);
@@ -25,19 +26,20 @@
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo " <td>" . $row["usu_cedula"] . "</td>";
-        echo " <td>" . $row['usu_nombres'] ."</td>";
-        echo " <td>" . $row['usu_apellidos'] . "</td>";
+        echo " <td>" . $row['usu_nombre'] ."</td>";
+        echo " <td>" . $row['usu_apellido'] . "</td>";
         echo " <td>" . $row['usu_direccion'] . "</td>";
-        echo " <td>" . $row['usu_fecha_nacimiento'] . "</td>";
-        echo " <td>" . $row['usu_correo'] . "</td>";
-        echo " <td> <a href='eliminar.php?codigo=" . $row['usu_codigo'] . "'>Eliminar</a> </td>";
-        echo " <td> <a href='modificar.php?codigo=" . $row['usu_codigo'] . "'>Modificar</a> </td>";
-        echo " <td> <a href='cambiar_contrasena.php?codigo=" . $row['usu_codigo'] . "'>Cambiar
+        echo " <td>" . $row['usu_fec_nac'] . "</td>";
+        echo " <td>" . $row['usu_email'] . "</td>";
+        echo " <td> <a href='eliminar.php?codigo=" . $row['usu_cod'] . "'>Eliminar</a> </td>";
+        echo " <td> <a href='modificar.php?codigo=" . $row['usu_cod'] . "'>Modificar</a> </td>";
+        echo " <td> <a href='cambiar_contrasena.php?codigo=" . $row['usu_cod'] . "'>Cambiar
        contraseña</a> </td>";
         echo "</tr>";
        }
+    }
  $conn->close();
  ?>
- </table>
+</table>
 </body>
 </html>
