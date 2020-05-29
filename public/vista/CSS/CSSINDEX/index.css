@@ -361,6 +361,7 @@ body {
     border: white solid;
 } 
 
+
 footer{
     float: left;
     margin-top: 40px;
@@ -368,6 +369,7 @@ footer{
     border-radius: 10px;
     background-color: #080429;
     padding-bottom: 20px;
+    width: 100%;
 }
 footer .fone{
     float: left;
@@ -375,7 +377,7 @@ footer .fone{
     margin-top: 30px;
     padding-top: 20px;
     margin-left: 50px;
-    width: 370px;
+    width: 25%;
     height:240px;
     color: white;
 }
@@ -385,7 +387,7 @@ footer .ftwo{
     background-color: #080429;
     padding-top: 20px;
     height:240px;
-    width: 300px;
+    width: 25%;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -395,7 +397,7 @@ footer .ftres{
     margin-top: 0px;
     padding-top: 20px;
     height:240px;
-    width: 300px;
+    width: 25%;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -420,7 +422,6 @@ footer .ftres{
     height: 70px;
     
 }
-
 
 footer div .fone a,p{
     
