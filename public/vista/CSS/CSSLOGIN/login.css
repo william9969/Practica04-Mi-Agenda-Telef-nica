@@ -62,6 +62,7 @@ header{
     margin-bottom: 10px;
     width: 100%;
     height: 20px;
+    padding-bottom: 0px;
 }
 
 #formulario01 button{
@@ -97,4 +98,11 @@ header{
 #formulario01 a:hover{
     opacity: 0.6;
     width: 90%;
+}
+.error {
+    color: red;
+    font-size: 8px;
+    width: 100%;
+    float: right;
+    opacity: 0.8;
 }
