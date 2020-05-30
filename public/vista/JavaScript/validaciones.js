@@ -6,6 +6,58 @@ var banderaApe = false;
 var banderaCon =false;
 var banderaFec = false;
 
+function validarBusqueda(correo){
+    if(correo.value.length=10 && correo.value.length<11){
+        ced =document.getElementById('buscar').value
+        array = ced.split("");
+        num = array.length;
+        if ( ced.length == 10 )
+        {
+        total = 0;
+        digito = (array[9]*1);
+        for( i=0; i < (num-1); i++ ) { 
+            mult = 0; 
+            if ( ( i%2 ) != 0 ) { 
+                
+                total = total + ( array[i] * 1 ); 
+            } 
+            else { 
+                mult = array[i] * 2; 
+                if ( mult > 9 )
+                total = total + ( mult - 9 );
+                else
+                total = total + mult;
+            }
+        }
+            decena = total / 10;
+            decena = Math.floor( decena );
+            decena = ( decena + 1 ) * 10;
+            final = ( decena - total );
+            if ( ( final == 10 && digito == 0 ) || ( final == digito ) ) {
+                correo.style.border = '2px chartreuse solid';
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
+
+    if (correo.value.length>3){
+        if (/^\w+([\.-]?\w+)*@(?:|est)\.(?:|ups)\.(?:|edu)\.(?:|ec)+$/.test(correo.value) || /^\w+([\.-]?\w+)*@(?:|ups)\.(?:|edu)\.(?:|ec)+$/.test(correo.value) ){              
+                correo.style.border = '2px chartreuse solid';
+                return true;
+        } else {
+                correo.style.border = '2px red solid';
+                return false;
+        }
+    }
+   
+  
+}
+
 function validarCedula(elemento)
 {   
     if(elemento.value.length > 0 && elemento.value.length<11){

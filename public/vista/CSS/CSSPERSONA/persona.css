@@ -1,0 +1,165 @@
+body{float: left;
+    background-color: #080429;}
+    @font-face {
+        font-family: 'Raleway';
+        src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+       
+    }
+    header .prin {
+        background-color:#080429;
+        width: 100%;
+        height: 110px;
+        padding: 0px;
+        border:white solid;
+        border-radius:20px ;
+    }
+    .prin a img{
+         float: left;
+         margin-top: 25px;
+        height: 70px;
+        width: 21%;    
+    }
+    
+    .prin input{
+        background-color: white;
+        border: grey solid;
+        margin-top: 35px;
+        margin-left: 90px;
+        float: left;
+        cursor: pointer;
+        color: blue;
+        font-size: 16px;
+        padding: 10px;
+        width: 40%;
+        border-radius: 20px;
+    }
+    
+     #log{
+        border: white solid;
+        border-radius: 100%;
+        float: left;
+        margin-top: 30px;
+        margin-left: 130px;
+        width: 50px;
+        height: 45px;
+    }
+     #men{
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 50px;
+        height: 45px;
+        border: white solid;
+        border-radius: 100%;
+    }
+     #acer{
+        float: left;
+        width: 85px;
+        height: 85px;
+        margin-top: 13px;
+        border-radius: 100%;
+    }
+    
+    
+    .menu ul {
+        float: left;
+        width: 99.6%;
+        margin: 0%;
+        margin-top: 15px;
+        padding: 0%;
+        border: 2px solid;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color:white;
+    }
+    
+    .menu ul li {
+        float: left;
+        list-style: none;
+        padding: 13px;
+        margin: 0%;
+        padding-left: 36.93px;
+        padding-right: 33px;
+        border-left: 1px solid;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color:#080429 ;
+    }
+    
+    .menu ul li:hover{
+        background-color: gray;
+        text-decoration: wheat;
+        cursor: pointer;
+    }
+    .menu ul li #ultimo{
+       padding-right: 17px;
+    }
+    
+    #datos {
+        float: left;
+        width: 30%;
+        margin-top: 30px;
+        color: white;
+        padding-bottom: 20px;
+        border-bottom: 2px white solid;
+        
+    }
+    #datos h1{
+        background-color: white;
+        font-size: 35px;
+        color: #080429;
+        text-align: center;
+    }
+    #datos h3{
+        font-size: 18px;
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+    #datos p{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #datos a{
+        font-size: 15px;
+        color: white;
+    }
+
+    #telefonos {
+        background-color: white;
+        margin-top: 50px;
+        float: left;
+        width: 70%;
+        padding-bottom: 30px;
+    }
+    #telefonos h1{
+        background-color: #080429;
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #telefonos table{
+            border-top: #080429 5px solid;
+            margin-left: 20%;
+            margin-right: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            border-radius: 30px;
+    }
+    #telefonos table tr th{
+        font-size: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    #telefonos table tr td{
+        font-size: 15px;
+        padding-left: 5px;
+    }   
+    #telefonos table tr td a {
+        color: #080429;
+    }   

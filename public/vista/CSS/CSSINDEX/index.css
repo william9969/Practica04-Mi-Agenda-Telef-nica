@@ -364,12 +364,10 @@ body {
 
 footer{
     float: left;
-    margin-top: 40px;
-    border: white solid;
-    border-radius: 10px;
+    margin-top: 30px;
+    border: wheat solid;
     background-color: #080429;
     padding-bottom: 20px;
-    width: 100%;
 }
 footer .fone{
     float: left;
@@ -377,7 +375,7 @@ footer .fone{
     margin-top: 30px;
     padding-top: 20px;
     margin-left: 50px;
-    width: 25%;
+    width: 370px;
     height:240px;
     color: white;
 }
@@ -385,19 +383,20 @@ footer .fone{
 footer .ftwo{
     float: left;
     background-color: #080429;
-    padding-top: 20px;
+    margin-top: 30px;
+    padding-top: 30px;
     height:240px;
-    width: 25%;
+    width: 300px;
     padding-left: 50px;
     padding-right: 50px;
 }
 footer .ftres{
     float: left;
     background-color: #080429;
-    margin-top: 0px;
-    padding-top: 20px;
+    margin-top: 30px;
+    padding-top: 30px;
     height:240px;
-    width: 25%;
+    width: 300px;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -423,8 +422,8 @@ footer .ftres{
     
 }
 
+
 footer div .fone a,p{
-    
     padding-left: 10px;
     font-size: 13px;
     
@@ -433,7 +432,7 @@ legend {
    align-items: center;
 }
 footer div fieldset {
-    font-size: 20px;
+    font-size: 12px;
     padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
@@ -446,7 +445,7 @@ hr, .color {
 }
 footer div fieldset h4{
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 12px;
     padding-left: 30px;
     color: white;
 }
