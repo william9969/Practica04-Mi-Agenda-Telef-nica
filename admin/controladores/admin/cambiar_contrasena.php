@@ -7,7 +7,7 @@
 <body>
 <?php
     //incluir conexión a la base de datos
-    include '../../config/conexionBD.php';
+    include '../../../config/conexionBD.php';
     $codigo = $_POST["codigo"];
     $contrasena1 = isset($_POST["contrasena1"]) ? trim($_POST["contrasena1"]) : null;
     $contrasena2 = isset($_POST["contrasena2"]) ? trim($_POST["contrasena2"]) : null;
@@ -27,7 +27,7 @@
         }else{
             echo "<p>La contraseña actual no coincide con nuestros registros!!! </p>";
         }
-            echo "<a href='../vista/user/indexUser.php'>Regresar</a>";
+            echo "<a href='../../vista/admin/indexAdmin.php'>Regresar</a>";
     $conn->close();
 ?> 
 </body> 

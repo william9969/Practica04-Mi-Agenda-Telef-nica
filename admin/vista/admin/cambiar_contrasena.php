@@ -8,7 +8,7 @@
  <?php
     $codigo = $_GET["codigo"];
  ?>
- <form id="formulario01" method="POST" action="../../controladores/cambiar_contrasena.php">
+ <form id="formulario01" method="POST" action="../../controladores/admin/cambiar_contrasena.php">
 
     <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
     <label for="cedula">Contraseña Actual (*)</label>

@@ -16,7 +16,7 @@
 
         while($row = $result->fetch_assoc()) {
         ?>
-            <form id="formulario01" method="POST" action="../../controladores/modificar.php">
+            <form id="formulario01" method="POST" action="../../controladores/admin/modificar.php">
 
             <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
             <label for="cedula">Cedula (*)</label>

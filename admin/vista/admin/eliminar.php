@@ -10,14 +10,14 @@
     $codigo = $_GET["codigo"];
     $sql = "SELECT * FROM usuario,telefono where usu_cod=$codigo and tel_usu_cod= $codigo";
 
-    include '../../../config/conexionBD.php';
+    include '../../../../config/conexionBD.php';
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
     ?>
-    <form id="formulario01" method="POST" action="../../controladores/eliminar.php">
+    <form id="formulario01" method="POST" action="../../controladores/admin/eliminar.php">
         <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
 
         <label for="cedula">Cedula (*)</label>
