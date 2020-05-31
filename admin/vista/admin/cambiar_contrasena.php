@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Modificar datos de persona</title>
+    <title>Modificar contrasena de persona</title>
+    <link href="../../../public/vista/CSS/CSSADMINISTRADOR/cambiar-contrasena.css" type="text/css"  rel="stylesheet"/>
 </head>
 <body>
  <?php

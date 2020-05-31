@@ -74,6 +74,4 @@ function validarTelefono(telefono){
     else {
         return true
     }
-    
-
 }

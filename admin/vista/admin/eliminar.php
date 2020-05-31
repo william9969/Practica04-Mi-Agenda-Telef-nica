@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Eliminar datos de Persona</title>
+    <link href="../../../public/vista/CSS/CSSADMINISTRADOR/eliminar.css" type="text/css"  rel="stylesheet"/>
 </head>
 <body>
     <?php
@@ -10,7 +11,7 @@
     $codigo = $_GET["codigo"];
     $sql = "SELECT * FROM usuario,telefono where usu_cod=$codigo and tel_usu_cod= $codigo";
 
-    include '../../../../config/conexionBD.php';
+    include '../../../config/conexionBD.php';
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

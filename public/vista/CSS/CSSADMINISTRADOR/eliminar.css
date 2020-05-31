@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+   
+}
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body {
+    background-color: #080429;
+}
+
+#formulario01 {
+    width: 25%;
+    top:10px;
+    display: block;
+    left: 35%;
+    position: relative;
+    background-color: #2b3a4d;
+    border-radius: 30px;
+    text-align: left;
+    padding: 30px;
+    border: 3px solid white;
+}
+
+#formulario01 label  {
+    color :white;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#formulario01 input {
+    color : #7e8da0;
+    background-color:#2b3a4d;
+    /*border:none;*/
+    padding:10px;
+    margin: 10px;
+    width: 90%;
+    font-size: 13px;
+}
+
+#formulario01 button{
+    margin-top: 10px;
+}
+
+#formulario01 #eliminar{
+    background-color: #59cebe;
+   
+    color:white;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+}
+
+#formulario01 #cancelar{
+    background-color: #59cebe;
+    color:white;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+}
+
+
+.error {
+    color: #c47953;
+    font-size: 10px;
+}
