@@ -13,10 +13,11 @@
 </head>
 <body>
     <?php
-    include '../../../config/conexionBD.php';
     $codigo = $_GET["codigo"];
+    include '../../../config/conexionBD.php';
+    
     ?>
-    <form id="formulario01" method="POST" action="../../controladores/usuario/telefonos/del_Tel.php">
+    <form id="formulario01" method="POST" action="../../controladores/usuario/telefonos/add_Tel.php">
         <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
         <br>
         <label for="tip_telefono">Tipo Telefono (*)</label>
@@ -34,7 +35,7 @@
         <input type="text" id="operadora" name="operadora" onkeyup="return validarOperadora(this)" value="" placeholder="Ingrese la operadora de su telefono..." />
         <span id="mensajeOperadora" class="error"></span>
         <br>
-        <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
+        <button type="submit" id="crear" name="crear" value="Aceptar">Aceptar </button>
         <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
     </form>
     <?php

@@ -8,14 +8,18 @@
     <?php
     include '../../../config/conexionBD.php';
     $codigo = $_GET["codigo"];
-    $sql = "SELECT * FROM telefono where tel_usu_cod=$codigo";    
+    $sql = "SELECT * FROM telefono where tel_cod=$codigo";  
     $result = $conn->query($sql);
+    $sentencia = "SELECT tel_usu_cod FROM telefono where tel_cod=$codigo";    
+    $cod=array_values(mysqli_fetch_array( $conn->query($sentencia)))[0];
+    //echo "<p>Codigo---- $cod</p>"
     if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
     ?>
         <form id="formulario01" method="POST" action="../../controladores/usuario/telefonos/del_Tel.php">
             <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
+            <input type="hidden" id="id" name="id" value="<?php echo $cod ?>" />
             <br>
             <label for="nombres">Tipo Telefono (*)</label>
             <input type="text" id="tipoTel" name="tipoTel" value="<?php echo $row["tel_tipo"];
