@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Eliminar Telefono</title>
     <script type="text/javascript" src="../JavaScript/validacion.js"></script>
+    <style type="text/css">
+    .error {
+        color: red;
+        font-size: 8px;
+    }
+    </style>
 </head>
 <body>
     <?php
@@ -15,7 +21,7 @@
         <br>
         <label for="tip_telefono">Tipo Telefono (*)</label>
         <br>
-        <input type="text" id="tip_telefono" onkeyup=""  name="tip_telefono" value="" placeholder="Ingrese el tipo de telefono..." />
+        <input type="text" id="tip_telefono"  onkeyup="return validarTipoTelefono(this)" name="tip_telefono" value="" placeholder="Ingrese el tipo de telefono..." />
         <span id="mensajeTipTelefono" class="error"></span>
         <br> 
         <label for="telefono">Teléfono (*)</label>
@@ -25,9 +31,11 @@
         <br>
         <label for="operadora">Operadora (*)</label>
         <br>
-        <input type="text" id="operadora" onkeyup=""  name="operadora" value="" placeholder="Ingrese la operadora de su telefono..." />
+        <input type="text" id="operadora" name="operadora" onkeyup="return validarOperadora(this)" value="" placeholder="Ingrese la operadora de su telefono..." />
         <span id="mensajeOperadora" class="error"></span>
         <br>
+        <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
+        <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
     </form>
     <?php
     $conn->close();
