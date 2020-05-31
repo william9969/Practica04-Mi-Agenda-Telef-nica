@@ -18,7 +18,7 @@
     $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
-    $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion','$fechaNacimiento','$correo', MD5('$contrasena'))";
+    $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion','$fechaNacimiento','$correo', MD5('$contrasena'),'U','N',null,null)";
     $res = $conn->query($sql);
     $id_user=mysqli_insert_id($conn);
 
@@ -35,9 +35,8 @@
 
      //cerrar la base de datos
      $conn->close();
-     echo "<a href='../../vista/Docs/Validaciones/validacion.html'>Regresar</a>";
+     header("Location: ../vista/Docs/Validaciones/validacion.html");
     
      ?>
 </body>
 </html>
-    
