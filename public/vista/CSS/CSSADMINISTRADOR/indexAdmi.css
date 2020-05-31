@@ -1,98 +1,106 @@
 body {
-background-color: #080429;}
-@font-face {
-    font-family: 'Raleway';
-    src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); 
-    width: 100%;
-}
-
-h1 {
-    padding: 0%;
-    text-align: center;
-    background-color: white;
-}
-
-header .prin {
-    background-color:#080429;
-    width: 100%;
-    height: 110px;
-    border-radius: 18px;
-    border:white solid;
-    border-radius:20px ;
-}
-
-.prin a img{
-    float: left;
-    margin-top: 25px;
-    height: 70px;
-    width: 21%;    
-}
-form {
-    float: left;
-}
-
-.prin input{
-   background-color: white;
-   border: grey solid;
-   margin-top: 35px;
-   margin-left: 90px;
-   float: left;
-   cursor: pointer;
-   font-size: 16px;
-   color: blue;
-   padding: 10px;
-   width: 80%;
-   border-radius: 20px;
-}
-
-#log{
-   border: white solid;
-   border-radius: 100%;
-   float: left;
-   margin-top: 30px;
-   margin-left: 130px;
-   width: 50px;
-   height: 45px;
-}
-
-#acer{
-   float: left;
-   width: 85px;
-   height: 85px;
-   margin-top: 13px;
-   border-radius: 100%;
-}
-
-table {
-    margin-top: 90px;
-    float: none;
-    width: 100%;
-    border: 2px solid #393939;
-}
-table th {
-    padding: 0.9em;
-    color: #26835b;
-    background: #393939;
-    border: 2px solid #393939;
-    font-size: 18px;
- }
-table tr {
-    color: #a3a3a3;
-    background: #222222;
-    border: 2px solid #393939;
+    background-color: #080429;}
+    @font-face {
+        font-family: 'Raleway';
+        src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v11/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); 
+        width: 100%;
+    }
     
-}
-
-table td {
-    padding: 0.8em;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-#imgl {
-    width: 20%;
-    height: 35px;
-}
+    h1 {
+        padding: 0%;
+        text-align: center;
+        background-color: white;
+    }
+    
+    header .prin {
+        background-color:#080429;
+        width: 100%;
+        height: 110px;
+        border-radius: 18px;
+        border:white solid;
+        border-radius:20px ;
+    }
+    
+    .prin a img{
+        float: left;
+        margin-top: 25px;
+        height: 70px;
+        width: 21%;    
+    }
+    form {
+        float: left;
+    }
+    
+    .prin input{
+       background-color: white;
+       border: grey solid;
+       margin-top: 35px;
+       margin-left: 90px;
+       float: left;
+       cursor: pointer;
+       font-size: 16px;
+       color: blue;
+       padding: 10px;
+       width: 80%;
+       border-radius: 20px;
+    }
+    
+    #log{
+       border: white solid;
+       border-radius: 100%;
+       float: left;
+       margin-top: 30px;
+       margin-left: 130px;
+       width: 50px;
+       height: 45px;
+    }
+    #men{
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+        width: 50px;
+        height: 45px;
+        border: white solid;
+        border-radius: 100%;
+     }
+    #acer{
+       float: left;
+       width: 85px;
+       height: 85px;
+       margin-top: 13px;
+       border-radius: 100%;
+    }
+    
+    table {
+        margin-top: 90px;
+        float: none;
+        width: 100%;
+        border: 2px solid #393939;
+    }
+    table th {
+        padding: 0.9em;
+        color: #26835b;
+        background: #393939;
+        border: 2px solid #393939;
+        font-size: 18px;
+     }
+    table tr {
+        color: #a3a3a3;
+        background: #222222;
+        border: 2px solid #393939;
+        
+    }
+    
+    table td {
+        padding: 0.8em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #imgl {
+        width: 20%;
+        height: 35px;
+    }

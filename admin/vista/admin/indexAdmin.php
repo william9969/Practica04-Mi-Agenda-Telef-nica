@@ -16,8 +16,10 @@
             <input  type="text" id="buscar" name="buscar" size="75"  onkeyup="return validarBusqueda(this)" placeholder="Buscar usuario ....."/> 
         </form>
         <a href="../../../public/vista/Docs/Login/login.html"><img id="log" src="../../../public/vista/Imagenes/login.png" alt=""/></a>
-        <a  href="../../../public/vista/Docs/Validaciones/validacion.html"><img id="acer" src="../../../public/vista/Imagenes/anadir.png" alt=""/></a>
-        
+        <?php 
+            echo "<a href='agregar-usuario.php'><img id='men' src='../../../public/vista/Imagenes/anadir.png' alt = ''/></a>";
+            ?>
+         <a href="../../../public/vista/Docs/Login/login.html"><img id="acer" src="../../../public/vista/Imagenes/salir.png" alt=""/></a>
         </div>     
         
     </header>
