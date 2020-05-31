@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Eliminar Telefono</title>
+    <link href="../../../public/vista/CSS/CSSUSUARIO/eliminarTel.css" type="text/css"  rel="stylesheet"/>
 </head>
 <body>
     <?php

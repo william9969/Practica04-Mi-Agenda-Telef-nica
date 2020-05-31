@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Eliminar Telefono</title>
     <script type="text/javascript" src="../JavaScript/validacion.js"></script>
+    <link href="../../../public/vista/CSS/CSSUSUARIO/agregarTel.css" type="text/css"  rel="stylesheet"/>
     <style type="text/css">
     .error {
         color: red;
