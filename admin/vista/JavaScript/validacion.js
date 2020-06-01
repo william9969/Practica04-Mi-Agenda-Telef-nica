@@ -426,6 +426,7 @@ function buscarPorCedula() {
 
 function busquedaTelefono(){
     var telefono = document.getElementById("buscar").value;
+    if(telefono.length==10){
     if (telefono == "") {
         document.getElementById("informacion").innerHTML = "";
         } else {
@@ -448,5 +449,5 @@ function busquedaTelefono(){
         xmlhttp.send();
         }
         return false;
-
+    }
 }

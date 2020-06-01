@@ -1,10 +1,10 @@
 <?php
  //incluir conexión a la base de datos
- include "conexionBD.php";
+ include '../../../../config/conexionBD.php';
  $telefono = $_GET['telefono'];
  //echo "Hola " . $cedula;
 
- $sql = "SELECT * FROM telefono WHERE  tel_cod='$telefono'";
+ $sql = "SELECT * FROM telefono WHERE  tel_numero='$telefono'";
 //cambiar la consulta para puede buscar por ocurrencias de letras
  $result = $conn->query($sql);
  echo " <table style='width:100%'>

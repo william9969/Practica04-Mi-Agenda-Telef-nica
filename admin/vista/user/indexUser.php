@@ -4,22 +4,22 @@
  <meta charset="UTF-8">
  <title>Gestión de usuarios</title>
  <link href="../../../public/vista/CSS/CSSUSUARIO/indexUser.css" type="text/css"  rel="stylesheet"/>
+ <script  type="text/javascript" src="../JavaScript/validacion.js"></script>
 </head>
 <body>
     <header>
         <div class="prin">
             <a  href=""><img id='pri'src="../../../public/vista/Imagenes/pricipal.jpg" alt="Pcont"  /></a>
-            <form METHOD=POST ACTION="../../controladores/usuario/telefonos/buscar_Tel.php">
-                <input  type="text" id="buscar" name="buscar" size="75"  ng-click="busquedaTelefono()" placeholder="Buscar telefono ....."/> 
-            </form>
+            <input  type="text" id="buscar" name="buscar" size="40"   onkeyup="return busquedaTelefono()" placeholder="Buscar telefono ....."/> 
             <?php 
-            $id= $_GET["id"];
-            echo "<a href='contraEditar.php?codigo=$id'><img id='log' src='../../../public/vista/Imagenes/editarContra.png' alt=''/></a>";
-            echo "<a href='agregarTel.php?codigo=$id'><img id='men' src='../../../public/vista/Imagenes/addTel.png' alt=''/></a>";
-            echo "<a  href='../../controladores/usuario/personal/sesion.php'><img id='acer' src='../../../public/vista/Imagenes/salir.png' alt=''/></a>";
+                $id= $_GET["id"];
+                echo "<a href='contraEditar.php?codigo=$id'><img id='log' src='../../../public/vista/Imagenes/editarContra.png' alt=''/></a>";
+                echo "<a href='agregarTel.php?codigo=$id'><img id='men' src='../../../public/vista/Imagenes/addTel.png' alt=''/></a>";
+                echo "<a  href='../../controladores/usuario/personal/sesion.php'><img id='acer' src='../../../public/vista/Imagenes/salir.png' alt=''/></a>";
             ?>
         </div>     
     </header>
+
     <div id="informacion">
             <h1>Datos Telefonicos</h1>
     </div>
