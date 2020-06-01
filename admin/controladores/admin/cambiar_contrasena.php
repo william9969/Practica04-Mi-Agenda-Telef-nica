@@ -23,7 +23,7 @@
     } else {
         echo "<p>Error: " . mysqli_error($conn) . "</p>";
         }
-    
+
         }else{
             echo "<p>La contraseña actual no coincide con nuestros registros!!! </p>";
         }

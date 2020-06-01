@@ -49,7 +49,7 @@
            echo " <td> <a href='../../../admin/vista/admin/eliminar.php?codigo=" . $row['usu_cod'] . "'> <img id='imgl' src='../../../public/vista/Imagenes/eliminar.png'/>  Eliminar</a> </td>";
            echo " <td> <a href='../../vista/admin/modificar.php?codigo=" . $row['usu_cod'] . "'> <img id='imgl' src='../../../public/vista/Imagenes/modificar.png'/>  Modificar</a></td>";
            //echo " <td> <a href='buscar.php?cedula=" . $row['usu_cedula'] . "'>Buscar</a> </td>";
-           echo " <td> <a href='../../vista/cambiar_contrasena.php?codigo=" . $row['usu_cod'] . "'>Cambiar contraseña</a> </td>";
+           echo " <td> <a href='../../vista/admin/cambiar_contrasena.php?codigo=" . $row['usu_cod'] . "'>Cambiar contraseña</a> </td>";
            echo "</tr>";
           }
        }
