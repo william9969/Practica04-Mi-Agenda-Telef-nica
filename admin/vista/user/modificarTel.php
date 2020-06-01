@@ -39,7 +39,7 @@
                 <span id="mensajeOperadora" class="error"></span>
                 <br>
                 <input type="submit" id="modificar" name="modificar" value="Modificar" />
-                <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+                <input type="reset" id="cancelar" onclick=history.back(); name="cancelar" value="Cancelar" />
         </form>
         <?php
         }

@@ -35,7 +35,7 @@
             ?>" disabled/>
             <br>
             <input type="submit" id="eliminar" name="eliminar" value="Eliminar" />
-            <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+            <input type="reset" id="cancelar" onclick=history.back(); name="cancelar" value="Cancelar" />
         </form>
     <?php
     }

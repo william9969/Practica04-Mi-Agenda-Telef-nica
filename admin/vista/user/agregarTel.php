@@ -37,7 +37,7 @@
         <span id="mensajeOperadora" class="error"></span>
         <br>
         <button type="submit" id="crear" name="crear" value="Aceptar">Aceptar </button>
-        <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
+        <button type="reset" id="cancelar" onclick=history.back(); name="cancelar" value="Cancelar">Cancelar </button>
     </form>
     <?php
     $conn->close();
