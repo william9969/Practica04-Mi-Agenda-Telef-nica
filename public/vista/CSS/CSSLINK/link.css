@@ -28,6 +28,7 @@ h1{
     height: 40px;
     font-size: 20px;
     margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 a{
@@ -38,7 +39,7 @@ a{
     color: #080429;
     border-radius: 30px;
     text-decoration: none;
-    
+
 }
 
 a:hover{

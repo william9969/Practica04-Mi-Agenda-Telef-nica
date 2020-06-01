@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Crear Nuevo Usuario</title>
+    <link href="../../../public/vista/CSS/CSSLINK/link.css" type="text/css"  rel="stylesheet"/>
 </head>
 <body>
     <?php
