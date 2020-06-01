@@ -424,6 +424,7 @@ function buscarPorCedula() {
 }
 
 
+
 function busquedaTelefono(){
     var telefono = document.getElementById("buscar").value;
     if(telefono.length==10){
@@ -439,11 +440,11 @@ function busquedaTelefono(){
         }
         xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+        alert("llegue");
     
         document.getElementById("informacion").innerHTML = this.responseText;
         }
         };
-        console.log(telefono);
         xmlhttp.open("GET","../../controladores/usuario/telefonos/buscarTel.php?telefono="+telefono,true);
         xmlhttp.send();
         }
