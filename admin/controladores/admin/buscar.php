@@ -9,7 +9,7 @@
     //incluir conexión a la base de datos
     include '../../config/conexionBD.php';
     $cedula = $_GET['cedula'];
-    //echo "Hola " . $cedula;
+    echo "Hola " . $cedula;
 
     $sql = "SELECT * FROM usuario WHERE usu_eliminado = 'N' and usu_cedula='$cedula'";
     //cambiar la consulta para puede buscar por ocurrencias de letras

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Modificar datos de persona</title>
-    <script type="text/javascript" src="../JavaScript/validacion.js"></script>
+    <script type="text/javascript" src="../../vista/JavaScript/validacion.js"></script>
 </head>
 <body>
     <form onsubmit="return buscarPorCedula()"  method="POST" action="../../controladores/admin/buscar.php" >         

@@ -80,7 +80,7 @@
         <span id="mensajeContrasena" class="error"></span>
         <br>
         <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
-        <button type="reset" id="cancelar" name="cancelar" value="Cancelar">Cancelar </button>
+        <button type="reset" id="cancelar" name="cancelar" value="Cancelar" onclick="window.close()">Cancelar </button>
         <!--<input type="submit" id="crear" name="crear" value="Aceptar" />
         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />-->
     </form>

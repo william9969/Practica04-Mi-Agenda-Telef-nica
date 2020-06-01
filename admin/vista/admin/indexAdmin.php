@@ -18,8 +18,9 @@
         <a href="../../../public/vista/Docs/Login/login.html"><img id="log" src="../../../public/vista/Imagenes/login.png" alt=""/></a>
         <?php 
             echo "<a href='agregar-usuario.php'><img id='men' src='../../../public/vista/Imagenes/anadir.png' alt = ''/></a>";
+            echo "<a href='buscar.php'><img id='men1' src='../../../public/vista/Imagenes/buscar.png' alt = ''/></a>";
             ?>
-         <a href="../../../public/vista/Docs/Login/login.html"><img id="acer" src="../../../public/vista/Imagenes/salir.png" alt=""/></a>
+         <a href="../../../public/vista/index.html"><img id="acer" src="../../../public/vista/Imagenes/salir.png" alt=""/></a>
         </div>     
         
     </header>
