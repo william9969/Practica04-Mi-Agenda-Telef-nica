@@ -28,9 +28,9 @@
         $resS = $conn->query($sqlQ);
    } else {
         if($conn->errno == 1062){
-            echo "<p class='error'>La persona con la cedula $cedula ya esta registrada en el sistema </p>";
+            echo "<h1>class='error'>La persona con la cedula $cedula ya esta registrada en el sistema </h1>";
         }else{
-            echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";
+            echo "<h1> class='error'>Error: " . mysqli_error($conn) . "</h1>";
         }
     }
 
