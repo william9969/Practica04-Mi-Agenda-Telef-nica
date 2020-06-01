@@ -12,7 +12,7 @@
     } 
     else {
         //echo "<p>No Encontrado </p>";
-        //header("Location: ../vista/index.html");
+        header("Location: ../vista/index.html");
     }
     $conn->close();
 ?>

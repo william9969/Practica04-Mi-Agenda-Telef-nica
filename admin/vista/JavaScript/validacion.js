@@ -422,3 +422,31 @@ function buscarPorCedula() {
         alert('Datos Incorrectos')
     }
 }
+
+
+function busquedaTelefono(){
+    var telefono = document.getElementById("buscar").value;
+    if (telefono == "") {
+        document.getElementById("informacion").innerHTML = "";
+        } else {
+        if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+        } else {
+        // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        alert("llegue");
+    
+        document.getElementById("informacion").innerHTML = this.responseText;
+        }
+        };
+        console.log(telefono);
+        xmlhttp.open("GET","../../controladores/usuario/telefonos/buscarTel.php?telefono="+telefono,true);
+        xmlhttp.send();
+        }
+        return false;
+
+}
