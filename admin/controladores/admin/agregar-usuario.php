@@ -17,8 +17,9 @@
     $operadora = isset($_POST["operadora"]) ? mb_strtoupper(trim($_POST["operadora"]), 'UTF-8') : null;
     $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;
     $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null;
+    $tip_usuario = isset($_POST["tip_usuario"]) ? mb_strtoupper(trim($_POST["tip_usuario"]), 'UTF-8') : null;
     $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
-    $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion','$fechaNacimiento','$correo', MD5('$contrasena'),'U','N',null,null)";
+    $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion','$fechaNacimiento','$correo', MD5('$contrasena'),'$tip_usuario','N',null,null)";
     $res = $conn->query($sql);
     $id_user=mysqli_insert_id($conn);
 
@@ -35,7 +36,7 @@
 
      //cerrar la base de datos
      $conn->close();
-     header("<a href='../../vista/admin/indexAdmin.php'>Regresar</a>");
+     header("<a href='../../vista/admin/listar.php'>Regresar</a>");
     
      ?>
 </body>

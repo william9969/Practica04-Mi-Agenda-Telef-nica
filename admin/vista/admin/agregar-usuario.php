@@ -79,6 +79,11 @@
         <input type="password" id="contrasena" name="contrasena" value="" onkeyup="return validarContraseña(this)" placeholder="Ingrese su contraseña ..." />
         <span id="mensajeContrasena" class="error"></span>
         <br>
+        <label for="tip_usuario">Tipo de Usuario (*)</label>
+        <br>
+        <input type="text" id="tip_usuario" name="tip_usuario" value="" onkeyup="" placeholder="Ingrese el tipo de usuario ..." />
+        <span id="mensajeContrasena" class="error"></span>
+        <br>
         <button type="submit" id="crear" name="crear" onclick="botonSubmit()" value="Aceptar">Aceptar </button>
         <button type="reset" id="cancelar" name="cancelar" value="Cancelar" onclick="window.close()">Cancelar </button>
         <!--<input type="submit" id="crear" name="crear" value="Aceptar" />
